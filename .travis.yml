@@ -13,10 +13,10 @@ jobs:
   include:
     stage: lint
     script:
-      - npm lint
+      - npm run lint
     stage: test
     script:
-      - npm test
+      - npm run test
     stage: deploy
     script: echo "Publishing to npm..."
     deploy:
