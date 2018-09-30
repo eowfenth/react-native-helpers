@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/eowfenth/react-native-helpers/issues"
   },
-  "homepage": "https://github.com/eowfenth/react-native-helpers#readme"
+  "homepage": "https://github.com/eowfenth/react-native-helpers#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
+
