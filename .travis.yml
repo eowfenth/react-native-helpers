@@ -11,5 +11,5 @@ stages:
 
 jobs:
   include:
-    - stage: lint
+    stage: lint
     script: echo "lint"
