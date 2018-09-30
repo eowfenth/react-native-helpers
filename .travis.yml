@@ -13,6 +13,9 @@ jobs:
   include:
     - stage: lint
       script:
+        - npm run lint
+    - stage: test
+      script:
         - npm run test
 
 # jobs:
