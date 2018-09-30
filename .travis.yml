@@ -1,8 +1,15 @@
-deploy:
-  provider: npm
-  on:
-    branch: master
-  email:
-    secure: 3mp61JOhUbYj/QnkzhZyTEcmXR5G/xB+2QqPhm+YwRBAA4VEWKg42/P9HEanT1wq0ydvVH4NI/b5S0DUWxcNcAMpzC7uGI58OrGLJMaSgXmEr9MflhSdHwwgbHZmxu2ZfymrjYFMHhKC3U2BL6XADOgPjvi4++5TxHF3EDDYNqeuc6tOv2CTBFnJ0EjgFn6JAWnWesrYU6xlml/ISPVIp3UWb/ycizjmUkWyCeftrjRu6qu4E+ohn9ivt1L5h99ULTrY1SeSbeees/2+RmG+BrXGcSHt/ohfFndO+R9lJCDKbOyOBJYoKLhNNrcV3xBf2Y0rDN5sBvDB6LBiZM92hTP4NCTuebyJIUxdAUkrkhy1Ug3LiQqKVF3VX/cykvb4Hj/+xyzAFL3ocza5g0qvoe6rzIIvBLKnAUJaHZDr5Twju6Sb05a0SdIqn5oXUikw/tew7sIkycDvp3/GJbuLYpPAqKhwGzW/rjXd5dT+f51TwTOTYZEiErQzq/83ux7STFZHi6UJCglLNa7GHu+YcNB8pZnJobhdme0+gTXB1lBOt5NVIMQ5CxMKzaZz/W0zlPay56vfE2VF0PT+rzKpfBTdk0das7pB9BriE0fAmI4Cjg0KPV6/UbtEGapLNfXA4uijdq9wbWkwDbDFSpXwGIg9pUL0h/62Vcn/f+T5llY=
-  api_key:
-    secure: J9zgd8QpWTtpPFueSdIVfGTNFBuC+346G6V4f+YDJNSI0DfZBfKwf4IkeV+/Rjfqg9K9i3QYVznh2jRRZRTkgSAdIUTyYpRxOXw8B1qprBSPUOR4+Geb6G0niTv26ZJE/AD/RA8XAJyKSnipeXX4lBjfeGHAaFc26EJ8MlX0cXhCpill3HTwSXAe9cQqO07rKqYvqXaMZrFe9k6GWXS+a+CW0NehBnygk3LKsrlUbjl6kkOjdiaVz7wE+igB/TSQZKJj6yvD3ayAs/1/p80LkHTeXNtNfMAg0TrlUxrliC0VPvl1LErRN21058uFMiqpbFxu3EGdcwl5FFdreI1o5xdPgV4j2xmdCgAUFc8cQhIOtpuOcMGAgpQkw0iR4Uj/EGLFqFcQxCOBC4aWx1uzDK88Og+WcpnKyfl2avTUMaGsMvi/FIPFZx0YR14qSQ+FK6zUNc7SljtVvgLs/LT6QL8isqL+AXwGb4ywfRIMb3x9aX5P5RaalaYZrwQVc6Dzmw46NUltosVBB+7rkS5ar8AA+puHutNVNSjTX+2lOZiHJThZcTEevGKgAWUIvQt3rdh++josYM7Wbqd0PByPba0VTIxEYTQn2kwAvFsiDbVBst2fDJMLUuEg7641EI9EhPL6oFlHv+FNYlBHOdMC6FB/N/yWfBNH6nZwdki+TMk=
+language: node_js
+node_js:
+  - "node"
+stages:
+  - lint
+  - test
+  - deploy
+jobs:
+  include:
+    stage: lint
+    script: echo "lint"
+    stage: test
+    script: echo "teste"
+    stage: deploy
+    script: echo "deploy"
