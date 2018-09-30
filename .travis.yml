@@ -7,9 +7,9 @@ stages:
   - deploy
 jobs:
   include:
-    stage: lint
+    - stage: lint
     script: echo "lint"
-    stage: test
+    - stage: test
     script: echo "teste"
-    stage: deploy
+    - stage: deploy
     script: echo "deploy"
