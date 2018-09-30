@@ -4,9 +4,9 @@ node_js:
   - "node"
   - "lts/*"
   
-# stages:
-#   - lint
-#   - test
+stages:
+  - lint
+  - test
 #   - deploy
 
 jobs:
