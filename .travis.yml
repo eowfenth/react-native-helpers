@@ -8,11 +8,8 @@ stages:
   - lint
   - test
   - deploy
+
 jobs:
   include:
     - stage: lint
     script: echo "lint"
-    - stage: test
-    script: echo "teste"
-    - stage: deploy
-    script: echo "deploy"
